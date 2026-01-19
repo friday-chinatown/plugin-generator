@@ -5,6 +5,9 @@ node_modules/
 .vscode/
 .idea/
 
+# Claude Code local settings
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db

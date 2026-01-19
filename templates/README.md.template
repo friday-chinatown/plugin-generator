@@ -2,20 +2,37 @@
 
 ## 概要
 
-{{PLUGIN_NAME}} プラグインの説明。
+{{PLUGIN_NAME}} プラグインの説明をここに記述してください。
 
 ## インストール
 
-```bash
-claude --plugin-dir ./{{PLUGIN_NAME}}
-```
+Claude Codeでプラグインを有効化：
+
+1. このディレクトリをクローンまたはコピー
+2. Claude Codeの設定でプラグインディレクトリを指定
 
 ## 使い方
 
-### コマンド
+### 利用可能なコマンド
 
 - `/{{PLUGIN_NAME}}:hello` - 挨拶メッセージを表示
 
 ## 開発
 
-プラグインの開発方法や拡張方法をここに記述してください。
+### 新しいコマンドを追加
+
+1. `commands/` ディレクトリに新しい `.md` ファイルを作成
+2. ファイル名がコマンド名になります（例: `goodbye.md` → `/{{PLUGIN_NAME}}:goodbye`）
+
+### コマンドファイルの形式
+
+```markdown
+---
+name: command-name
+description: コマンドの説明
+---
+
+# Command Name
+
+コマンドの動作を記述してください。
+```
